@@ -7,14 +7,8 @@ const getSystemInfo = () => {
     const cpuSpeed: number = os.cpus()[0].speed;
     const memoryCapacity: number = Math.floor(osUtils.totalmem() / 1024);
     return {
-        cpu: {
-            cores: cpuCores,
-            model: cpuModel,
-            speed: cpuSpeed
-        },
-        ram: {
-            capacity: memoryCapacity
-        }
+        cpu: { cores: cpuCores, model: cpuModel, speed: cpuSpeed },
+        ram: { capacity: memoryCapacity }
     };
 };
 

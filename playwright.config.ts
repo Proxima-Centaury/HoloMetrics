@@ -13,5 +13,5 @@ export default defineConfig({
         reuseExistingServer: !process.env.CI,
         url: `http://localhost:3000`
     },
-    workers: process.env.CI ? 1 : undefined,
+    workers: process.env.CI ? 1 : undefined
 });

@@ -8,9 +8,7 @@ electron.contextBridge.exposeInMainWorld(`electron`, {
     }
 } satisfies Window[`electron`]);
 
-const ipcRendererInvoke = <Key extends keyof EventPayloadMapping>(key: Key, ...args: any[]): Promise<EventPayloadMapping[Key]> => {
-    return electron.ipcRenderer.invoke(key, ...args);
-};
+const ipcRendererInvoke = <Key extends keyof EventPayloadMapping>(key: Key, ...args: any[]): Promise<EventPayloadMapping[Key]> => electron.ipcRenderer.invoke(key, ...args);
 
 const ipcRendererOn = <Key extends keyof EventPayloadMapping>(key: Key, callback: (payload: EventPayloadMapping[Key]) => void) => {
     const nestedCallback = (_: Electron.IpcRendererEvent, payload: any) => callback(payload);

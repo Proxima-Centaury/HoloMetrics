@@ -19,6 +19,4 @@ test.beforeEach(async () => {
     await isPreloadScriptLoaded();
 });
 
-test.afterEach(async () => {
-    if(ElectronApp) await ElectronApp.close();
-});
+test.afterEach(async () => { if(ElectronApp) await ElectronApp.close() });

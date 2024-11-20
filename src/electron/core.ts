@@ -13,9 +13,7 @@ const MainWindowOptions: Electron.BrowserWindowConstructorOptions = {
     // fullscreen: true,
     resizable: false,
     transparent: true,
-    webPreferences: {
-        preload: getPreloadPath()
-    }
+    webPreferences: { preload: getPreloadPath() }
 };
 
 app.on(`ready`, () => {

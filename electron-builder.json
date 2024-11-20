@@ -3,14 +3,7 @@
     "extraResources": [ "dist/electron/preload.cjs" ],
     "files": [ "dist/electron", "dist/react", "src/assets/**" ],
     "icon": "./src/assets/icons/icon@32x.png",
-    "linux": {
-        "category": "Utility",
-        "target": "AppImage"
-    },
-    "mac": {
-        "target": "dmg"
-    },
-    "win": {
-        "target": [ "portable", "msi" ]
-    }
+    "linux": { "category": "Utility", "target": "AppImage" },
+    "mac": { "target": "dmg" },
+    "win": { "target": [ "portable", "msi" ] }
 }

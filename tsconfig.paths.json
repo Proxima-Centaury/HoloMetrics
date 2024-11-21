@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            ">_/*": [ "src/*" ],
+            ">_/electron/*": [ "src/electron/*" ],
+            ">_/react/*": [ "src/react/*" ]
+        }
+    }
+}

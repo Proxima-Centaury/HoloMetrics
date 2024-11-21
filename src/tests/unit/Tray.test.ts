@@ -1,5 +1,5 @@
 import { app, BrowserWindow, Menu } from "electron";
-import { createTray } from "../../electron/utils/tray/creator.js";
+import { createTray } from ">_/electron/utils/tray/creator.js";
 import { describe, expect, Mock, test, vi } from "vitest";
 
 vi.mock(`electron`, () => ({
